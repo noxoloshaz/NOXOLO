@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>shaz.com</title>
+    <link rel="icon" href="LOGO.png">
     <link rel="stylesheet" href="newport.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
 
 <div class="heading">
     <h5 class="hello">Hi, I am </h5><br>
-    <h1>Noxolo Sereo</h1>
+  <h1>NOXOLO SEREO</h1>
     <h5 class="textie">Loading web developer</h5>
 <br><br><br><br><br>
     <div class="icons">
@@ -34,15 +35,17 @@
 
     <div class="right">
       <nav>
-        <ul>
-        <a href="#about">About</a>
+       
+              <div id="navbar">
+        <a class="active" href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#work_with_me" class="moreme">Contact Me</a>
-        </ul>
+              </div>
+            
       </nav>
       <div class="picture">
-      <img src="mina.png" width="600px">
+      <img src="losa.png" width="500px">
       </div>
     </div>
   </div>
@@ -51,12 +54,12 @@
 <div class="cv">
   <div class="cv-work">
   <h3><span class="my">My</span> <span>Biography</span><br></h3><br><br>
-<a href="cv.png" download><button type="button" value="Download!" class="btn"><i class="fa fa-chevron-down"></i> DOWNLOAD CV</button></a>
+  <a href="cv.png" download><button type="button" value="Download!" class="btn"><i class="fa fa-chevron-down"></i> DOWNLOAD CV</button></a>
 </div>
 </div>
 
   <div class="para1">
-    <p class="paragrah"> I am Shameelah Noxolo Sereo I am currently at Quirky 30
+    <p class="paragrah">I am Shameelah Noxolo Sereo I am currently at Quirky 30
   in Langa, I am studying Web development and Web design. Before this I was in
   matric which is grade 12 at Queen’s Park High School in Woodstock. I was doing
    seven subjects which were English home language, Afrikaans first additional
@@ -124,5 +127,19 @@
 <div class="number"><p>Noxolo@quirky30.co.za</p></div>
 </div>
 
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
   </body>
 </html>
