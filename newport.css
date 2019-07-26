@@ -59,7 +59,7 @@ table {
 .right nav ul a {
 	margin-right: 14px;
 }
-.right nav ul .moreme {
+.right #navbar .moreme {
 	background-color: white;
 	padding: 8px 20px;
 	color: red;
@@ -117,7 +117,7 @@ margin-top: 100px;
 	font-weight: bold;
 }
 h1{
-	font-size: 50px;
+	font-size: 40px;
 	color: crimson;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
@@ -152,6 +152,7 @@ h1{
 }
 .para1{
 	width: 55%;
+	padding: 15px;
 }
 .paragrah{
 	font-size: 12px;
@@ -297,3 +298,30 @@ font-size: 20px;
 .last-text .icons2 .fa-github{
 color: crimson;
 }
+
+
+  #navbar {
+	z-index: 1;
+	margin-left: 150px;
+  }
+  #navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+  }
+  #navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 50%;
+	background-color: #5b41d0;
+	
+color: #000;
+  }
+  
